@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="box" id="home">
+  <div class="navbar">
+    <img src="img/AHMED-logos_white.png" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#story">STORES</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </nav>
+    <img src="img/menu.png" class="menu">
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h1>REALITY</h1>
+      <p>
+        Welcome to the <span style="color: gold">"Reality"</span> page. These stories are from my imagination, and if they conflict with any other story, it is purely a coincidence. These stories are not realistic as the name of the site is called, and the name of the site is nothing but a name. I hope these stories happen in reality, but it is from the seventh impossible..... Enjoy❤✌
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="swiper-container" id="story">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" >
+      <a href="story/phone.pdf"  new >
+      <div class="card card1">
+        <h5>انا الهاتف البحر </h5>
+      </div>
+    </a></div>
+    <div class="swiper-slide">
+    <a href="story/battle.pdf"  new >
+    <div class="card card2">
+      <h5>ارض المعركه</h5>
+    </div>
+  </a></div>
+    <div class="swiper-slide">
+      <a href="story/soul.pdf"  new >
+        <div class="card card3">
+          <h5>الروح العائمه</h5>
+        </div>
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="story/change.pdf"  new >
+        <div class="card card4">
+          <h5>تحول المستحيل </h5>
+        </div>
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="story/message.pdf"  new >
+        <div class="card card5">
+          <h5>رساله وداع</h5>
+        </div>
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="story/soul%202.pdf"  new >
+        <div class="card card6">
+          <h5>جمال الروح </h5>
+        </div>
+      </a>
+    </div>
+  
+
+
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: null,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    loop:true,
+  });
+</script>
+<div id="about">
+<h4>folow me</h4>
+  <div id="ico">
+    <a href="https://www.facebook.com/ahmed.doban.56">
+      <img src="img/facebook.png">
+    </a>
+    <a href="https://www.instagram.com/ahmeddoban/?fbclid=IwAR1jb8lidO0kNX9luLk6ut08M-dshxi40g_l_ucSEBu259tRd-tSvZTRzSk">
+      <img src="img/instagram.png">
+    </a>
+    <a href="https://twitter.com/ahmed_doban?fbclid=IwAR3Tmof2MsFVObRt4zajeQQDZY92Qe-Xkzum22y58AHA46cdPZ4_rXiv-Bw">
+      <img src="img/twitter.png">
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=201555894860&text&app_absent=0">
+      <img src="img/whatsapp.png">
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
