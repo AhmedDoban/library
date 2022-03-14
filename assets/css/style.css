@@ -27,24 +27,8 @@ body {
   # Header
   --------------------------------------------------------------*/
   #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 9997;
-    transition: all 0.5s;
-    padding: 15px;
-    overflow-y: auto;
+    display: none;
   }
-  @media (max-width: 992px) {
-    #header {
-      width: 300px;
-      background: #fff;
-      border-right: 1px solid #e6e9ec;
-      left: -300px;
-    }
-  }
-  
   @media (min-width: 992px) {
     #main {
       margin-left: 100px;
@@ -57,6 +41,7 @@ body {
   section {
     padding: 60px 0 100px;
     overflow: hidden;
+    display: none;
   }
   
   .section-title {
@@ -157,6 +142,7 @@ body {
   # Footer
   --------------------------------------------------------------*/
   #footer {
+    display: none;
     background: #45505b;
     color: #b7c1cc;
     font-size: 14px;
@@ -214,7 +200,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    height: 100vh;
    }
    .container-home {
      width: 90%;
