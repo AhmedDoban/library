@@ -1,0 +1,391 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    
+  }
+  
+  a {
+    color: #0563bb;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #067ded;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+
+
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  @media (max-width: 992px) {
+    #header {
+      width: 300px;
+      background: #fff;
+      border-right: 1px solid #e6e9ec;
+      left: -300px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #main {
+      margin-left: 100px;
+    }
+  }
+ 
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0 100px;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  }
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  .contact .info, .contact{
+    width: 100%;
+    background: #fff;
+  }
+  .contact .info i , .contact i {
+    font-size: 20px;
+    color: #0563bb;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #eef7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 ,.contact h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #45505b;
+  }
+  .contact .info p ,.contact p  {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #728394;
+  }
+  .contact .info .email, .contact .phone {
+    margin-top: 40px;
+  }
+  .contact .info .email:hover i, .contact .info .address:hover i, .contact .phone:hover i {
+    background: #0563bb;
+    color: #fff;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #45505b;
+    color: #b7c1cc;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  #footer p {
+    color: rgb(26, 25, 25);
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #0563bb;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .social-links a:hover {
+    background: #242525;
+    color: #fff;
+    text-decoration: none;
+  }
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  #footer .credits {
+    font-size: 13px;
+  }
+
+
+
+  .home{
+    background-color: #1e1f26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .container-home {
+     width: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     max-width: 1000px;
+     margin: 50px auto;
+   }
+   .right{
+     width: 60%;
+     background-image: url(../img/magicbook.jpg);
+     height: 600px;
+     background-repeat: no-repeat;
+     background-position: center;
+     border-radius: 12px;
+     transition: .5s;
+     transform: .5s;
+   }
+   .left{
+    width: 40%;
+    min-height: 400px;
+    background-color: #303137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    margin-left: -250px;
+    transition: .5s;
+    transform: .5s;
+   }
+  
+   .left h1 {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  .left p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .left a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  
+  @media(max-width: 996px) {
+    .container-home{
+     padding-top: 10px;
+      flex-direction: column;
+      height: 100vh;
+ 
+      width: 100%;
+      margin: 0 20px;
+      transition: .5s;
+      transform: .5s;
+    }
+    .right {
+      width: 100%;
+      height: 400px;
+    }
+    .left {
+      width: 90%;
+      margin: 0;
+      margin-top: -150px;
+    }
+  }
+
+
+  /*books section */
+  #Story{
+    padding-right: 50px;
+    margin-left: -50px;
+  }
+  .story-right{
+    width: 90%;
+    height: 400px;
+    margin: 70px 10px;
+  }
+  .story-right img{
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    transition: .5s;
+    transform: .5s;   
+    max-width: 100%;
+    -moz-box-shadow:    3px 3px 5px 6px rgba(47, 94, 138,.5);;;
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(47, 94, 138,.5);;;
+    box-shadow:         3px 3px 5px 6px rgba(47, 94, 138,.5);;;
+
+  }
+  .story-left{
+   width: 40%;
+   min-height: 250px;
+   background-color: #303137;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px;
+   border-radius: 12px;
+   color: white;
+   margin-top: -370px;
+   margin-left: 270px;
+   transition: .5s;
+   transform: .5s;
+   position: relative;
+   -moz-box-shadow:    3px 3px 5px 6px rgba(138, 124, 47, 0.5);;;
+   -webkit-box-shadow: 3px 3px 5px 6px rgba(138, 124, 47, 0.5);;;
+   box-shadow:         3px 3px 5px 6px rgba(138, 124, 47, 0.5);;;
+  }
+  .story-right img:hover{
+    max-width: 100%;
+    height: 60vh;
+    justify-content: center;
+
+    position: relative;
+    -moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.5);;;
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.5);;;
+    box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.5);;;
+  }
+  .story-left:hover{
+    max-width: 100%;
+    height: 40vh;
+    justify-content: center;
+
+    position: relative;
+    -moz-box-shadow:    3px 3px 5px 6px rgba(255, 0, 0, 0.5);;;
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(255, 0, 0, 0.5);;;
+    box-shadow:         3px 3px 5px 6px rgba(255, 0, 0, 0.5);;;
+  }
+ 
+  .story-left h1 {
+   font-size: 40px;
+   font-weight: lighter;
+ }
+ .story-left p {
+   margin: 20px 0;
+   font-weight: 500;
+   line-height: 25px;
+ }
+ .story-left a {
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: white;
+   color: black;
+   padding: 20px 30px;
+   display: inline-block;
+   letter-spacing: 1px;
+ }
+ 
+ @media(max-width: 996px) {
+   .story-right {
+     width: 90%;
+     height: 400px;
+     padding: 10px;
+   }
+   #Story{
+    padding-right: 0px;
+    margin-left: 0px;
+  }
+   .story-left {
+     width: 79%;
+     margin: 35px;
+     margin-top: -200px;
+     margin-left: 35px;
+   }
+ }
