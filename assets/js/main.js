@@ -1,22 +1,15 @@
-    function playstory() { 
-      var about = document.getElementById('Story');
-      var contact = document.getElementById('contact');
-      var footer = document.getElementById('footer');
-      var header = document.getElementById('header');
-       if (about.style.display === 'block' ||
-           contact.style.display === 'block'||
-           footer.style.display === 'block' ||
-           header.style.display === 'block' 
-       ) {
-        about.style.display = 'none';
-        contact.style.display = 'none';
-        footer.style.display = 'none';
-        header.style.display = 'none'
-      } else {
-        about.style.display = 'block';
-        contact.style.display = 'block';
-        footer.style.display = 'block';
-        header.style.display = 'block';
+let btn = document.querySelector(".back-to-top");
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+window.onscroll = () => {
+  if (window.scrollY > 150) {
+    btn.style.cssText = "display:flex";
+  } else {
+    btn.style.cssText = "display:none";
   }
-    } 
-
+};
