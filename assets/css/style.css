@@ -90,7 +90,7 @@ h6 {
   # Sections General
   --------------------------------------------------------------*/
 section {
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 150px;
   overflow: hidden;
 }
@@ -136,53 +136,71 @@ section {
   # Home
   --------------------------------------------------------------*/
 .home {
+  position: relative;
+  background-color: #122a42;
+  height: 100vh;
+}
+.home::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50% at 80% 65%);
   background-image: url("../img/1\ \(1\).png");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #171614;
+  z-index: 2;
+}
+.container-home {
+  position: relative;
+  background-color: #212122;
+  width: calc(100% - 40%);
+  height: 100%;
+  padding: 20px 150px 20px 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
 }
 
-.container-home {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
+.container-home h1 {
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
-.left {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #3031379b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  color: white;
-  transition: 0.5s;
-  transform: 0.5s;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-.left h1 {
-  font-size: 40px;
-  font-weight: lighter;
-}
-.left p {
-  margin: 50px auto;
+.container-home p {
   font-weight: 500;
-  line-height: 25px;
+  line-height: 30px;
+  letter-spacing: 1px;
   width: 80%;
+  color: #fff;
 }
-.left a {
+@media (max-width: 1200px) {
+  .container-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 3;
+    background-color: #21212286;
+  }
+  .container-home .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-home p {
+    width: 100%;
+  }
+}
+.container-home a {
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #272829;
+  background-color: #005d9e;
   color: #eee;
   padding: 20px 30px;
   display: inline-block;
